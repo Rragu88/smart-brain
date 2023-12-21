@@ -24,7 +24,7 @@ class Register extends Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('https://protected-island-67426.herokuapp.com/register', {
+        fetch('https://smart-brain-api-kntv.onrender.com/register', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

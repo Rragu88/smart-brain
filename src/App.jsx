@@ -73,7 +73,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch('https://protected-island-67426.herokuapp.com/imageurl', {
+    fetch('https://smart-brain-api-kntv.onrender.com/imageurl', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -83,7 +83,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://protected-island-67426.herokuapp.com/image', {
+          fetch('https://smart-brain-api-kntv.onrender.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
